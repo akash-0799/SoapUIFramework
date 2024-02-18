@@ -24,6 +24,7 @@ public class testRunner {
 		
 		for(int i=0;i<testSuite.getTestCaseCount();i++) {
 			WsdlTestCase testCase = testSuite.getTestCaseAt(i);		
+			System.out.println(testCase.getName());
 		// Run the test cases
 			TestRunner runner=testCase.run(new PropertiesMap(), false); // for setting property from java test set it here
 			
